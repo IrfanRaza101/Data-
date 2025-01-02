@@ -1,0 +1,255 @@
+
+
+.footer-ctr{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+ 
+
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    max-width: 500px; /* Restrict maximum width */
+    background: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container1 h3{
+    margin-bottom: -20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+input, button {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #e60000;
+}
+
+button {
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+#outputMessage {
+    color: #e60000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .form-row {
+        flex-direction: column; 
+    }
+}
+
+
+.bgr{
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    display: flex;
+    left: 0%;
+    top: 0;
+}
+
+.btl{
+    width: 100%;
+    max-width: 150px;
+    position: absolute;
+    margin-left: -120px;
+    margin-top: -20px;
+
+}
+
+.plate{
+    width: 100%;
+    max-width: 300px;
+    position: absolute;
+    display: flex;
+    right: -7%;
+    top: 15%;
+}
+
+.last-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.ftr{
+    display: flex;
+    width: 90%;
+    background-image: url(images/Place\ Your\ Design\ Here\ \(Double\ Click\ to\ Edit\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 10px 20px black;
+    margin-bottom: 50px                 
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.one img{
+   width: 100%;
+   max-width: 400px;
+}
+
+.one p{
+  color: #ffffff;
+}
+
+.two{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: end;
+    text-transform: capitalize;
+    list-style-image: url(images/Location\ Icon.png);
+    height: 50%;
+    margin-top: 10px;
+}
+
+.location li:nth-child(2){
+    list-style-image: url(images/Email.png);
+    margin-top: 10px;
+}
+
+.location li{
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 150px;
+}
+
+.two button{
+    background-color: #cccccc00;
+    color: #b3000000;
+    cursor: pointer;
+}
+
+.fbutton{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 50%;
+    right: 100%;
+}
+
+ /* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .one, .two {
+        width: 50%; /* On larger tablets, still keep the 50% width */
+    }
+
+    .bgr{
+        display: none;
+    }
+    
+    .plate{
+       display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .ftr {
+        flex-direction: column; /* Stack the elements vertically on medium screens */
+ padding: 10px; /* Reduced padding for smaller screens */
+    }
+
+    .one, .two {
+        width: 100%; /* Make columns full width on smaller screens */
+        margin: 10px 0; /* Reduced margin */
+    }
+
+    .location li {
+        margin-left: 0; /* Removed large margin for better readability */
+        text-align: center; /* Center align the text */
+    }
+
+    .one img {
+        width: 100%;
+        max-width: 300px; 
+        
+    }
+
+    .one p{
+        color: #ffffff;
+        
+        
+      }
+
+      
+}
+
+@media (max-width: 600px) {
+    .last-footer {
+        padding: 15px; /* Reduced padding for mobile */
+    }
+    .btl{
+        display: none;
+     }
+
+    .ftr {
+        width: 100%; /* Ensure the footer takes full width */
+    }
+
+    .location li {
+        text-align: center; /* Center-align text for better readability */
+    }
+
+    .two button {
+        width: 100%; /* Make button full width on mobile for better usability */
+        padding: 12px;
+    }
+}
